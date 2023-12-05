@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/editTextItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="22sp"
+        android:background="@android:color/transparent"
+        android:enabled="false"
+        android:inputType="textNoSuggestions"/>
+
+    <ImageView
+        android:id="@+id/editButton"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_edit"
+    android:clickable="true"
+    android:onClick="onEditClick"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_save"
+    android:visibility="gone"
+    android:clickable="true"
+    android:onClick="onSaveClick"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/deleteButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_delete"
+    android:clickable="true"
+    android:onClick="onDeleteClick"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+        android:focusable="true" />
+
+</LinearLayout>
